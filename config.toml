@@ -1,0 +1,24 @@
+# Pengaturan bawaan Streamlit untuk Terminal Ringan.
+
+[client]
+# "minimal" menyembunyikan tombol Deploy dan menu pengembang di pojok kanan atas.
+# Tombol itu gunanya mengunggah aplikasi ke server Streamlit Cloud — tidak ada
+# hubungannya dengan pemakaian sehari-hari di komputer sendiri.
+toolbarMode = "minimal"
+showErrorDetails = true
+
+[browser]
+# Jangan kirim statistik pemakaian ke mana pun.
+gatherUsageStats = false
+
+[server]
+# Muat ulang otomatis saat berkas diubah — memudahkan kalau Anda mengutak-atik kode.
+runOnSave = true
+headless = false
+
+[theme]
+# Hanya dasar dan warna aksen. Warna selebihnya diatur aplikasi lewat CSS
+# supaya tombol terang/gelap di sidebar bisa bekerja tanpa memulai ulang.
+base = "dark"
+primaryColor = "#e08b2a"
+font = "monospace"
