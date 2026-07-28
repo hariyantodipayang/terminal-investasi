@@ -1,0 +1,22 @@
+{
+  "versi": "1.0.0",
+  "tanggal": "2026-07-28",
+  "catatan": "Rilis awal.",
+  "berkas": {
+    "terminal_ringan.py": {
+      "url": "https://raw.githubusercontent.com/hariyantodipayang/terminal-investasi/main/terminal_ringan.py",
+      "sha256": "855c100aefc605a6e2e9381b92bc99d9891f07c1e8bd59f060338f784769f54a",
+      "ukuran": 237083
+    },
+    "requirements.txt": {
+      "url": "https://raw.githubusercontent.com/hariyantodipayang/terminal-investasi/main/requirements.txt",
+      "sha256": "ca3f025381152d4d213762e08fc47a23e8a0aa4242cfdff3d6b45bddfd31be15",
+      "ukuran": 100
+    },
+    "BACA-DULU.md": {
+      "url": "https://raw.githubusercontent.com/hariyantodipayang/terminal-investasi/main/BACA-DULU.md",
+      "sha256": "b701bd06ae68d7cc0e7d62aec921eac134dd1cdebeebeff1b7b9f37f36ddb568",
+      "ukuran": 13597
+    }
+  }
+}
