@@ -1,12 +1,12 @@
 {
-  "versi": "1.0.0",
+  "versi": "1.1.0",
   "tanggal": "2026-07-28",
-  "catatan": "Rilis awal.",
+  "catatan": "Antarmuka bahasa Inggris, peluncur macOS/Linux, dan paket rilis.",
   "berkas": {
     "terminal_ringan.py": {
       "url": "https://raw.githubusercontent.com/hariyantodipayang/terminal-investasi/main/terminal_ringan.py",
-      "sha256": "855c100aefc605a6e2e9381b92bc99d9891f07c1e8bd59f060338f784769f54a",
-      "ukuran": 237083
+      "sha256": "69a85b27aa3fd423d31cd840eb90e3cae2ca76ece840380a185229fe88ff899f",
+      "ukuran": 243749
     },
     "requirements.txt": {
       "url": "https://raw.githubusercontent.com/hariyantodipayang/terminal-investasi/main/requirements.txt",
