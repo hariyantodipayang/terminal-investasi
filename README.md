@@ -5,9 +5,10 @@
 **A lightweight financial terminal that runs on your own computer.**
 **No subscription. No credits. No API keys.**
 
-![Version](https://img.shields.io/badge/version-1.0.0-e08b2a)
+![Version](https://img.shields.io/badge/version-1.1.0-e08b2a)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-Windows%20·%20macOS%20·%20Linux-lightgrey)
+![Language](https://img.shields.io/badge/UI-Indonesian%20·%20English-e08b2a)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 
 Stocks · Crypto · Forex — across 12 markets
@@ -42,7 +43,7 @@ This project rebuilds that convenience layer, locally, for nothing.
 
 Everything runs in Python on your own machine. Your portfolio, your journal, your wallet addresses — none of it leaves your computer.
 
-Built in Indonesian. English support is planned.
+**Available in Indonesian and English** — switch language from the sidebar at any time.
 
 ---
 
@@ -65,20 +66,29 @@ python --version
 
 **1. Download the app**
 
-Either clone the repository:
+**Easiest:** grab the latest ZIP from the
+[Releases page](https://github.com/hariyantodipayang/terminal-investasi/releases/latest).
+
+> **Windows users — do this before extracting.** Right-click the downloaded ZIP →
+> **Properties** → tick **Unblock** → **OK**. Windows flags files that came from the
+> internet, and unblocking the ZIP once clears everything inside it. Skip this and the
+> launcher will refuse to run.
+
+Or clone the repository:
 
 ```
 git clone https://github.com/hariyantodipayang/terminal-investasi.git
 ```
-
-Or click the green **Code** button above → **Download ZIP** → extract it somewhere convenient.
 
 **2. Start it**
 
 | System | What to do |
 |---|---|
 | **Windows** | Double-click `MULAI.cmd` |
-| **macOS / Linux** | `pip install -r requirements.txt` then `streamlit run terminal_ringan.py` |
+| **macOS / Linux** | `chmod +x MULAI.sh` once, then `./MULAI.sh` |
+
+Both launchers create an isolated Python environment, install what's needed, and start the
+app. You don't have to touch pip yourself.
 
 **3. Wait**
 
@@ -332,6 +342,13 @@ Please read this before relying on anything here.
 ---
 
 ## Version history
+
+### 1.1.0 — July 2026
+
+- **English interface** — switch language from the sidebar; the choice is remembered
+- **macOS and Linux launcher** (`MULAI.sh`) with automatic environment setup
+- Packaged releases with a clean download ZIP
+- Fixed: a local variable shadowed the translation function, breaking the Backtest page
 
 ### 1.0.0 — July 2026
 

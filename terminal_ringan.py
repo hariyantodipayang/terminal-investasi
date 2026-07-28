@@ -425,7 +425,7 @@ PROFIL = {
 BERKAS_PENGATURAN = DATA_DIR / "pengaturan.json"
 
 # ── Versi dan saluran pembaruan ───────────────────────────────────────
-VERSI = "1.0.0"
+VERSI = "1.1.0"
 
 # Alamat berkas keterangan versi. Ganti dengan repositori Anda sendiri.
 # Harus HTTPS — pembaruan lewat sambungan biasa bisa disusupi di tengah jalan.
@@ -481,6 +481,133 @@ PALET = {
 }
 
 
+# ── Bahasa ────────────────────────────────────────────────────────────
+# Bahasa Indonesia adalah sumbernya. Kalau sebuah kunci belum diterjemahkan,
+# teks Indonesianya yang dipakai — jadi menambah bahasa baru tidak pernah
+# membuat aplikasi menampilkan kunci mentah kepada pemakai.
+
+BAHASA = {
+    "id": {"_nama": "Bahasa Indonesia"},
+    "en": {"_nama": "English"},
+}
+
+TEKS = {
+    # ── Kerangka ──
+    "merek":            ("TERMINAL RINGAN", "LIGHT TERMINAL"),
+    "data_terbuka":     ("● DATA TERBUKA", "● OPEN DATA"),
+    "tanpa_kredit":     ("TANPA KREDIT · TANPA API KEY", "NO CREDITS · NO API KEYS"),
+    "sub_merek":        ("DATA TERBUKA", "OPEN DATA"),
+
+    # ── Menu ──
+    "m_pasar":          ("Pasar", "Market"),
+    "m_grafik":         ("Grafik", "Charts"),
+    "m_screener":       ("Screener", "Screener"),
+    "m_fundamental":    ("Fundamental", "Fundamentals"),
+    "m_backtest":       ("Backtest", "Backtest"),
+    "m_kalkulator":     ("Kalkulator", "Calculators"),
+    "m_berita":         ("Berita & Makro", "News & Macro"),
+    "m_portofolio":     ("Portofolio", "Portfolio"),
+    "m_dompet":         ("Dompet Kripto", "Crypto Wallet"),
+    "m_peringatan":     ("Peringatan", "Alerts"),
+    "m_jurnal":         ("Jurnal", "Journal"),
+    "m_laporan":        ("Laporan", "Reports"),
+    "m_tentang":        ("Tentang", "About"),
+
+    # ── Sidebar ──
+    "mode_terang":      ("☀  MODE TERANG", "☀  LIGHT MODE"),
+    "mode_gelap":       ("☾  MODE GELAP", "☾  DARK MODE"),
+    "sb_simbol":        ("simbol dipantau", "symbols tracked"),
+    "sb_posisi":        ("posisi tercatat", "positions recorded"),
+    "sb_lokal":         ("Data tersimpan lokal di folder <code>data/</code>.",
+                         "Data is stored locally in the <code>data/</code> folder."),
+    "sb_dibuat":        ("Dibuat oleh", "Built by"),
+    "sb_versi_baru":    ("VERSI BARU TERSEDIA", "NEW VERSION AVAILABLE"),
+    "sb_buka_tentang":  ("buka Tentang → Pembaruan", "open About → Updates"),
+    "bahasa":           ("Bahasa", "Language"),
+
+    # ── Judul halaman ──
+    "j_denyut":         ("Denyut Pasar", "Market Pulse"),
+    "j_grafik":         ("Grafik & Analisa", "Charts & Analysis"),
+    "j_screener":       ("Screener", "Screener"),
+    "j_fundamental":    ("Analisis Fundamental", "Fundamental Analysis"),
+    "j_backtest":       ("Backtest Strategi", "Strategy Backtest"),
+    "j_kalkulator":     ("Kalkulator Posisi & Risiko", "Position & Risk Calculator"),
+    "j_berita":         ("Berita & Data Makro", "News & Macro Data"),
+    "j_portofolio":     ("Portofolio", "Portfolio"),
+    "j_dompet":         ("Dompet Kripto", "Crypto Wallet"),
+    "j_peringatan":     ("Peringatan Harga", "Price Alerts"),
+    "j_jurnal":         ("Jurnal Transaksi", "Trade Journal"),
+    "j_laporan":        ("Laporan PDF", "PDF Reports"),
+    "j_tentang":        ("Tentang", "About"),
+    "j_denyut_kripto":  ("Denyut Kripto", "Crypto Pulse"),
+    "j_watchlist":      ("Watchlist", "Watchlist"),
+
+    # ── Tab ──
+    "t_indeks":         ("Indeks Dunia", "World Indices"),
+    "t_kripto":         ("Kripto", "Crypto"),
+    "t_forex":          ("Forex", "Forex"),
+    "t_komoditas":      ("Komoditas & Kurs", "Commodities & FX"),
+    "t_saham_id":       ("Saham Indonesia", "Indonesian Equities"),
+    "t_grafik_ind":     ("Grafik & Indikator", "Charts & Indicators"),
+    "t_pembacaan":      ("Pembacaan Teknikal", "Technical Read"),
+    "t_saham":          ("Saham", "Stocks"),
+    "t_ukuran_posisi":  ("Ukuran Posisi", "Position Size"),
+    "t_posisi_forex":   ("Posisi Forex", "Forex Position"),
+    "t_rata_harga":     ("Rata-rata Harga", "Averaging"),
+    "t_impas":          ("Titik Impas", "Break-even"),
+    "t_kabel_berita":   ("Kabel Berita", "News Wire"),
+    "t_indikator_ek":   ("Indikator Ekonomi", "Economic Indicators"),
+    "t_laba_rugi":      ("Laba Rugi", "Income Statement"),
+    "t_neraca":         ("Neraca", "Balance Sheet"),
+    "t_arus_kas":       ("Arus Kas", "Cash Flow"),
+    "t_catat":          ("Catat", "Record"),
+    "t_riwayat":        ("Riwayat", "History"),
+    "t_statistik":      ("Statistik", "Statistics"),
+    "t_aplikasi":       ("Aplikasi", "Application"),
+    "t_pembuat":        ("Pembuat", "Author"),
+    "t_pembaruan":      ("Pembaruan", "Updates"),
+
+    # ── Tombol umum ──
+    "b_muat_ulang":     ("⟳  MUAT ULANG", "⟳  RELOAD"),
+    "b_segarkan":       ("⟳  SEGARKAN", "⟳  REFRESH"),
+    "b_tambah":         ("TAMBAH", "ADD"),
+    "b_hapus":          ("HAPUS TERPILIH", "DELETE SELECTED"),
+    "b_simpan":         ("SIMPAN", "SAVE"),
+
+    # ── Kolom tabel ──
+    "k_simbol":         ("Simbol", "Symbol"),
+    "k_nama":           ("Nama", "Name"),
+    "k_harga":          ("Harga", "Price"),
+    "k_perubahan":      ("Perubahan", "Change"),
+    "k_persen":         ("Persen", "Percent"),
+    "k_volume":         ("Volume", "Volume"),
+    "k_sektor":         ("Sektor", "Sector"),
+    "k_jumlah":         ("Jumlah", "Quantity"),
+    "k_nilai":          ("Nilai", "Value"),
+    "k_laba_rugi":      ("Laba/Rugi", "P&L"),
+    "k_kapitalisasi":   ("Kapitalisasi", "Market cap"),
+    "k_dividen":        ("Dividen %", "Dividend %"),
+}
+
+
+KUNCI_MENU = {
+    "Pasar": "m_pasar", "Grafik": "m_grafik", "Screener": "m_screener",
+    "Fundamental": "m_fundamental", "Backtest": "m_backtest",
+    "Kalkulator": "m_kalkulator", "Berita & Makro": "m_berita",
+    "Portofolio": "m_portofolio", "Dompet Kripto": "m_dompet",
+    "Peringatan": "m_peringatan", "Jurnal": "m_jurnal",
+    "Laporan": "m_laporan", "Tentang": "m_tentang",
+}
+
+
+def t(kunci: str) -> str:
+    """Ambil teks sesuai bahasa aktif. Jatuh kembali ke Indonesia bila perlu."""
+    pasangan = TEKS.get(kunci)
+    if not pasangan:
+        return kunci
+    return pasangan[1] if st.session_state.get("bahasa", "id") == "en" else pasangan[0]
+
+
 def pal() -> dict:
     """Palet yang sedang aktif. Aman dipanggil sebelum tema tersimpan dibaca."""
     return PALET.get(st.session_state.get("tema", "gelap"), PALET["gelap"])
@@ -493,6 +620,7 @@ if "tema" not in st.session_state:
     tersimpan = muat_json_awal(BERKAS_PENGATURAN, {})
     st.session_state.tema = tersimpan.get("tema", "gelap")
     st.session_state.cek_otomatis = tersimpan.get("cek_otomatis", True)
+    st.session_state.bahasa = tersimpan.get("bahasa", "id")
 
 GAYA = """
 <style>
@@ -635,6 +763,7 @@ def simpan_pengaturan() -> None:
     simpan_json(BERKAS_PENGATURAN, {
         "tema": st.session_state.get("tema", "gelap"),
         "cek_otomatis": st.session_state.get("cek_otomatis", True),
+        "bahasa": st.session_state.get("bahasa", "id"),
     })
 
 
@@ -808,11 +937,11 @@ def ambil_laporan(simbol: str) -> dict:
     """Laporan keuangan tahunan — laba rugi, neraca, arus kas."""
     import yfinance as yf
     try:
-        t = yf.Ticker(simbol)
+        tkr = yf.Ticker(simbol)
         return {
-            "laba_rugi": t.income_stmt,
-            "neraca": t.balance_sheet,
-            "arus_kas": t.cashflow,
+            "laba_rugi": tkr.income_stmt,
+            "neraca": tkr.balance_sheet,
+            "arus_kas": tkr.cashflow,
         }
     except Exception:
         return {}
@@ -907,11 +1036,11 @@ def ambil_saldo_dompet(jaringan: str, alamat: str) -> dict:
             if d.get("error"):
                 return {"galat": str(d["error"].get("message", "Alamat tidak ditemukan."))}
             token = []
-            for t in (d.get("tokens") or [])[:40]:
+            for tk in (d.get("tokens") or [])[:40]:
                 info = t.get("tokenInfo", {})
                 try:
                     des = int(info.get("decimals") or 18)
-                    jml = float(t.get("rawBalance", 0)) / (10 ** des)
+                    jml = float(tk.get("rawBalance", 0)) / (10 ** des)
                 except (TypeError, ValueError):
                     continue
                 if jml <= 0:
@@ -1645,9 +1774,9 @@ def kop_halaman():
     jam = datetime.now().strftime("%d %b %Y  %H:%M")
     st.markdown(
         f'<div class="kop">'
-        f'<span class="merek">TERMINAL RINGAN</span>'
-        f'<span class="hidup">● DATA TERBUKA</span>'
-        f'<span>TANPA KREDIT · TANPA API KEY</span>'
+        f'<span class="merek">{t("merek")}</span>'
+        f'<span class="hidup">{t("data_terbuka")}</span>'
+        f'<span>{t("tanpa_kredit")}</span>'
         f'<span>{jam}</span>'
         f'</div>',
         unsafe_allow_html=True,
@@ -1659,10 +1788,10 @@ def kop_halaman():
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_pasar():
-    st.subheader("Denyut Pasar")
+    st.subheader(t("j_denyut"))
 
-    t1, t2, t5, t3, t4 = st.tabs(["Indeks Dunia", "Kripto", "Forex",
-                                  "Komoditas & Kurs", "Saham Indonesia"])
+    t1, t2, t5, t3, t4 = st.tabs([t("t_indeks"), t("t_kripto"), t("t_forex"),
+                                  t("t_komoditas"), t("t_saham_id")])
 
     with t1:
         petak_pasar(INDEKS_PANTAU, per_baris=3)
@@ -1699,9 +1828,9 @@ def halaman_pasar():
 
     kiri, kanan = st.columns([3, 1])
     with kiri:
-        st.subheader("Watchlist")
+        st.subheader(t("j_watchlist"))
     with kanan:
-        if st.button("⟳  MUAT ULANG", use_container_width=True):
+        if st.button(t("b_muat_ulang"), use_container_width=True):
             st.cache_data.clear()
             st.rerun()
 
@@ -1716,7 +1845,7 @@ def halaman_pasar():
                 label_visibility="collapsed",
             )
         with b:
-            if st.button("TAMBAH", use_container_width=True) and baru.strip():
+            if st.button(t("b_tambah"), use_container_width=True) and baru.strip():
                 for s in [x.strip().upper() for x in baru.split(",") if x.strip()]:
                     if s not in watchlist:
                         watchlist.append(s)
@@ -1725,7 +1854,7 @@ def halaman_pasar():
 
         buang = st.multiselect("Hapus simbol", watchlist, label_visibility="collapsed",
                                placeholder="Pilih simbol yang mau dihapus")
-        if buang and st.button("HAPUS TERPILIH"):
+        if buang and st.button(t("b_hapus")):
             st.session_state.watchlist = [s for s in watchlist if s not in buang]
             simpan_json(BERKAS_WATCHLIST, st.session_state.watchlist)
             st.rerun()
@@ -1790,7 +1919,7 @@ def bagian_forex():
 
 
 def bagian_kripto():
-    st.subheader("Denyut Kripto")
+    st.subheader(t("j_denyut_kripto"))
 
     dunia = ambil_kripto_global()
     fng = ambil_takut_serakah()
@@ -1858,7 +1987,7 @@ def bagian_kripto():
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_grafik():
-    st.subheader("Grafik & Analisa")
+    st.subheader(t("j_grafik"))
 
     pilihan = list(dict.fromkeys(
         (st.session_state.watchlist or list(WATCHLIST_AWAL)) + list(FOREX_SEMUA)))
@@ -1871,7 +2000,7 @@ def halaman_grafik():
     with c:
         interval = st.selectbox("Interval", ["1d", "1wk", "1mo"], index=0)
 
-    t_grafik, t_baca = st.tabs(["Grafik & Indikator", "Pembacaan Teknikal"])
+    t_grafik, t_baca = st.tabs([t("t_grafik_ind"), t("t_pembacaan")])
     with t_grafik:
         bagian_grafik(simbol, periode, interval)
     with t_baca:
@@ -1924,12 +2053,12 @@ def bagian_pembacaan(simbol: str, periode: str, interval: str):
 
     if b["puncak"]:
         fig.add_trace(go.Scatter(
-            x=[t for t, _ in b["puncak"]], y=[h for _, h in b["puncak"]],
+            x=[tgl for tgl, _ in b["puncak"]], y=[h for _, h in b["puncak"]],
             mode="markers", name="Puncak",
             marker=dict(symbol="triangle-down", size=7, color=pal()["turun"])))
     if b["lembah"]:
         fig.add_trace(go.Scatter(
-            x=[t for t, _ in b["lembah"]], y=[h for _, h in b["lembah"]],
+            x=[tgl for tgl, _ in b["lembah"]], y=[h for _, h in b["lembah"]],
             mode="markers", name="Lembah",
             marker=dict(symbol="triangle-up", size=7, color=pal()["naik"])))
 
@@ -2028,7 +2157,7 @@ def bagian_grafik(simbol: str, periode: str, interval: str):
         panel += 1
         tinggi.append(0.16)
     total = sum(tinggi)
-    tinggi = [t / total for t in tinggi]
+    tinggi = [x / total for x in tinggi]
 
     fig = make_subplots(rows=panel, cols=1, shared_xaxes=True,
                         vertical_spacing=0.03, row_heights=tinggi)
@@ -2485,13 +2614,13 @@ def tafsir_teknikal(b: dict) -> list:
                       "menghentikan pergerakan, dan bisa saja ditembus.", "diam"))
 
     # ── Posisi dalam rentang setahun ──
-    t, r = b["tertinggi_52"], b["terendah_52"]
-    if t > r:
-        letak = (kini - r) / (t - r) * 100
+    atas, bawah = b["tertinggi_52"], b["terendah_52"]
+    if atas > bawah:
+        letak = (kini - bawah) / (atas - bawah) * 100
         hasil.append(("Posisi setahun",
                       f'Harga berada {letak:.0f}% dari dasar rentang 52 minggu '
-                      f'({format_angka(r)} sampai {format_angka(t)}), '
-                      f'{(kini / t - 1) * 100:+.1f}% dari puncaknya.',
+                      f'({format_angka(bawah)} sampai {format_angka(atas)}), '
+                      f'{(kini / atas - 1) * 100:+.1f}% dari puncaknya.',
                       "naik" if letak > 60 else ("turun" if letak < 40 else "diam")))
 
     return hasil
@@ -2502,7 +2631,7 @@ def tafsir_teknikal(b: dict) -> list:
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_screener():
-    st.subheader("Screener")
+    st.subheader(t("j_screener"))
     st.markdown(
         '<div class="catatan">Menyaring bukan berarti menemukan saham bagus — hanya '
         'mempersempit daftar yang layak dibaca lebih jauh. Angka murah sering murah karena '
@@ -2511,7 +2640,7 @@ def halaman_screener():
     )
     st.write("")
 
-    t_saham, t_kripto = st.tabs(["Saham", "Kripto"])
+    t_saham, t_kripto = st.tabs([t("t_saham"), t("t_kripto")])
     with t_saham:
         screener_saham()
     with t_kripto:
@@ -2849,7 +2978,7 @@ def screener_kripto():
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_fundamental():
-    st.subheader("Analisis Fundamental")
+    st.subheader(t("j_fundamental"))
 
     a, b = st.columns([3, 1])
     with a:
@@ -2922,7 +3051,7 @@ def halaman_fundamental():
 
     st.divider()
     laporan = ambil_laporan(simbol)
-    t1, t2, t3 = st.tabs(["Laba Rugi", "Neraca", "Arus Kas"])
+    t1, t2, t3 = st.tabs([t("t_laba_rugi"), t("t_neraca"), t("t_arus_kas")])
     for tab, kunci, judul in [(t1, "laba_rugi", "laba rugi"),
                               (t2, "neraca", "neraca"),
                               (t3, "arus_kas", "arus kas")]:
@@ -2960,7 +3089,7 @@ def tabel_laporan(df, judul: str):
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_kalkulator():
-    st.subheader("Kalkulator Posisi & Risiko")
+    st.subheader(t("j_kalkulator"))
     st.markdown(
         '<div class="catatan">Alat ini tidak menebak arah harga. Ia menjawab pertanyaan '
         'yang lebih penting: <i>kalau saya salah, berapa yang hilang?</i></div>',
@@ -2968,8 +3097,8 @@ def halaman_kalkulator():
     )
     st.write("")
 
-    t1, t4, t2, t3 = st.tabs(["Ukuran Posisi", "Posisi Forex",
-                              "Rata-rata Harga", "Titik Impas"])
+    t1, t4, t2, t3 = st.tabs([t("t_ukuran_posisi"), t("t_posisi_forex"),
+                              t("t_rata_harga"), t("t_impas")])
     with t1:
         kalkulator_posisi()
     with t4:
@@ -3287,7 +3416,7 @@ def kalkulator_impas():
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_peringatan():
-    st.subheader("Peringatan Harga")
+    st.subheader(t("j_peringatan"))
     st.markdown(
         '<div class="catatan">Peringatan diperiksa setiap kali halaman ini dibuka. '
         'Tidak ada notifikasi yang dikirim ke ponsel — aplikasi ini berjalan di komputer '
@@ -3330,7 +3459,7 @@ def halaman_peringatan():
             buang = st.multiselect("Hapus peringatan", list(range(len(daftar))),
                                    format_func=lambda i: label[i],
                                    placeholder="Pilih yang mau dihapus")
-            if buang and st.button("HAPUS TERPILIH", key="hapus_alert"):
+            if buang and st.button(t("b_hapus"), key="hapus_alert"):
                 st.session_state.peringatan = [p for i, p in enumerate(daftar)
                                                if i not in buang]
                 simpan_json(BERKAS_PERINGATAN, st.session_state.peringatan)
@@ -3406,7 +3535,7 @@ def halaman_peringatan():
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_jurnal():
-    st.subheader("Jurnal Transaksi")
+    st.subheader(t("j_jurnal"))
     st.markdown(
         '<div class="catatan">Mencatat <i>alasan</i> membeli jauh lebih berguna daripada '
         'mencatat harganya. Harga bisa dilihat kapan saja; alasan menguap dalam hitungan '
@@ -3416,7 +3545,7 @@ def halaman_jurnal():
     st.write("")
 
     jurnal = st.session_state.jurnal
-    t_catat, t_riwayat, t_statistik = st.tabs(["Catat", "Riwayat", "Statistik"])
+    t_catat, t_riwayat, t_statistik = st.tabs([t("t_catat"), t("t_riwayat"), t("t_statistik")])
 
     with t_catat:
         a, b, c = st.columns(3)
@@ -3490,7 +3619,7 @@ def halaman_jurnal():
             buang = st.multiselect("Hapus catatan", list(range(len(jurnal))),
                                    format_func=lambda i: label[i],
                                    placeholder="Pilih catatan yang mau dihapus")
-            if buang and st.button("HAPUS TERPILIH", key="hapus_jurnal"):
+            if buang and st.button(t("b_hapus"), key="hapus_jurnal"):
                 st.session_state.jurnal = [c for i, c in enumerate(jurnal) if i not in buang]
                 simpan_json(BERKAS_JURNAL, st.session_state.jurnal)
                 st.rerun()
@@ -3668,7 +3797,7 @@ def statistik_jurnal(jurnal: list):
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_dompet():
-    st.subheader("Dompet Kripto")
+    st.subheader(t("j_dompet"))
     st.markdown(
         '<div class="kartu" style="border-left:2px solid var(--naik);">'
         '<div class="label">HANYA BACA</div>'
@@ -3696,7 +3825,7 @@ def halaman_dompet():
         with c:
             st.write("")
             st.write("")
-            if st.button("TAMBAH", use_container_width=True, key="tambah_dompet"):
+            if st.button(t("b_tambah"), use_container_width=True, key="tambah_dompet"):
                 alamat = alamat.strip()
                 if not alamat:
                     st.warning("Alamat masih kosong.")
@@ -3717,7 +3846,7 @@ def halaman_dompet():
             buang = st.multiselect("Hapus alamat", list(range(len(dompet))),
                                    format_func=lambda i: label[i],
                                    placeholder="Pilih alamat yang mau dihapus")
-            if buang and st.button("HAPUS TERPILIH", key="hapus_dompet"):
+            if buang and st.button(t("b_hapus"), key="hapus_dompet"):
                 st.session_state.dompet = [d for i, d in enumerate(dompet) if i not in buang]
                 simpan_json(BERKAS_DOMPET, st.session_state.dompet)
                 st.rerun()
@@ -3746,7 +3875,7 @@ def halaman_dompet():
         h = harga.get(j["koin"], {})
         usd = hasil["saldo"] * float(h.get("usd", 0) or 0)
         idr = hasil["saldo"] * float(h.get("idr", 0) or 0)
-        nilai_token = sum(t["nilai_usd"] for t in hasil.get("token", []))
+        nilai_token = sum(x["nilai_usd"] for x in hasil.get("token", []))
         total_usd += usd + nilai_token
         baris.append({**d, **hasil, "usd": usd, "idr": idr,
                       "ubah": float(h.get("usd_24h_change", 0) or 0),
@@ -3804,10 +3933,10 @@ def halaman_dompet():
         if b.get("token"):
             with st.expander(f'{len(b["token"])} token di alamat ini'):
                 st.dataframe(pd.DataFrame({
-                    "Token": [t["kode"] for t in b["token"]],
-                    "Nama": [t["nama"] for t in b["token"]],
-                    "Jumlah": [f'{t["jumlah"]:,.4f}' for t in b["token"]],
-                    "Nilai": [format_ringkas(t["nilai_usd"]) for t in b["token"]],
+                    "Token": [x["kode"] for x in b["token"]],
+                    "Nama": [x["nama"] for x in b["token"]],
+                    "Jumlah": [f'{x["jumlah"]:,.4f}' for x in b["token"]],
+                    "Nilai": [format_ringkas(x["nilai_usd"]) for x in b["token"]],
                 }), use_container_width=True, hide_index=True)
                 st.markdown(
                     '<div class="catatan">Banyak token bernilai nol adalah token sampah '
@@ -3907,7 +4036,7 @@ def jalankan_backtest(harga: pd.Series, sinyal: pd.Series, modal_awal: float,
                    "harga_masuk": masuk_harga, "harga_keluar": akhir_h,
                    "hasil": (akhir_h / masuk_harga - 1) * 100 if masuk_harga else 0.0}
 
-    menang = sum(1 for t in transaksi if t["hasil"] > 0)
+    menang = sum(1 for x in transaksi if x["hasil"] > 0)
     total_tutup = len(transaksi)
 
     # Kurva penurunan (underwater) — jarak modal terhadap puncaknya sendiri
@@ -3985,7 +4114,7 @@ def buat_sinyal(strategi: str, harga: pd.Series, p: dict) -> pd.Series:
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_backtest():
-    st.subheader("Backtest Strategi")
+    st.subheader(t("j_backtest"))
     st.markdown(
         '<div class="catatan">Backtest menunjukkan bagaimana sebuah aturan <i>akan</i> '
         'berjalan seandainya dipakai di masa lalu. Ia bukan ramalan, dan hasil yang '
@@ -4175,10 +4304,10 @@ def halaman_backtest():
         kartu("WAKTU DI PASAR", f'{h["waktu_di_pasar"]:.0f}%', "sisanya memegang tunai")
     with k[3]:
         tr = h["daftar_transaksi"]
-        rerata = sum(t["hari"] for t in tr) / len(tr) if tr else float("nan")
+        rerata = sum(x["hari"] for x in tr) / len(tr) if tr else float("nan")
         if not math.isnan(rerata) and rerata < 1:
-            jam = sum((t["keluar"] - t["masuk"]).total_seconds() / 3600
-                      for t in tr) / len(tr)
+            jam = sum((x["keluar"] - x["masuk"]).total_seconds() / 3600
+                      for x in tr) / len(tr)
             teks = f"{jam:.1f} jam"
         else:
             teks = f"{rerata:.0f} hari" if not math.isnan(rerata) else "—"
@@ -4221,23 +4350,23 @@ def halaman_backtest():
     fig2 = go.Figure()
     fig2.add_trace(go.Scatter(x=h["harga"].index, y=h["harga"], name="Harga",
                               line=dict(color=pal()["teks3"], width=1.2)))
-    for t in h["daftar_transaksi"]:
-        fig2.add_vrect(x0=t["masuk"], x1=t["keluar"], line_width=0,
-                       fillcolor=pal()["naik"] if t["hasil"] > 0 else pal()["turun"],
+    for x in h["daftar_transaksi"]:
+        fig2.add_vrect(x0=x["masuk"], x1=x["keluar"], line_width=0,
+                       fillcolor=pal()["naik"] if x["hasil"] > 0 else pal()["turun"],
                        opacity=0.13, layer="below")
     if h["posisi_terbuka"]:
-        t = h["posisi_terbuka"]
-        fig2.add_vrect(x0=t["masuk"], x1=t["keluar"], line_width=0,
+        pt = h["posisi_terbuka"]
+        fig2.add_vrect(x0=pt["masuk"], x1=pt["keluar"], line_width=0,
                        fillcolor=pal()["aksen"], opacity=0.13, layer="below")
     if h["daftar_transaksi"]:
         fig2.add_trace(go.Scatter(
-            x=[t["masuk"] for t in h["daftar_transaksi"]],
-            y=[t["harga_masuk"] for t in h["daftar_transaksi"]],
+            x=[x["masuk"] for x in h["daftar_transaksi"]],
+            y=[x["harga_masuk"] for x in h["daftar_transaksi"]],
             mode="markers", name="Masuk",
             marker=dict(symbol="triangle-up", size=9, color=pal()["naik"])))
         fig2.add_trace(go.Scatter(
-            x=[t["keluar"] for t in h["daftar_transaksi"]],
-            y=[t["harga_keluar"] for t in h["daftar_transaksi"]],
+            x=[x["keluar"] for x in h["daftar_transaksi"]],
+            y=[x["harga_keluar"] for x in h["daftar_transaksi"]],
             mode="markers", name="Keluar",
             marker=dict(symbol="triangle-down", size=9, color=pal()["turun"])))
     fig2.update_layout(
@@ -4267,7 +4396,7 @@ def halaman_backtest():
             tabel = tabel.reindex(columns=range(1, 13))
             batas = max(abs(np.nanmin(tabel.values)), abs(np.nanmax(tabel.values)), 1)
             fig3 = go.Figure(go.Heatmap(
-                z=tabel.values, x=NAMA_BULAN, y=[str(t) for t in tabel.index],
+                z=tabel.values, x=NAMA_BULAN, y=[str(x) for x in tabel.index],
                 colorscale=[[0, pal()["turun"]], [0.5, pal()["panel"]], [1, pal()["naik"]]],
                 zmid=0, zmin=-batas, zmax=batas,
                 text=[[f"{v:+.1f}" if not (v != v) else "" for v in baris]
@@ -4289,7 +4418,7 @@ def halaman_backtest():
     with kanan:
         tr = h["daftar_transaksi"]
         if len(tr) >= 3:
-            hasil_tr = [t["hasil"] for t in tr]
+            hasil_tr = [x["hasil"] for x in tr]
             fig4 = go.Figure(go.Histogram(
                 x=hasil_tr, nbinsx=min(24, max(6, len(hasil_tr) // 2)),
                 marker=dict(color=pal()["aksen"], line=dict(color=pal()["latar"], width=1))))
@@ -4318,12 +4447,12 @@ def halaman_backtest():
         with st.expander(f'Rincian {len(h["daftar_transaksi"])} transaksi'):
             tr = h["daftar_transaksi"]
             st.dataframe(pd.DataFrame({
-                "Masuk": [f'{t["masuk"]:%d %b %Y}' for t in tr],
-                "Keluar": [f'{t["keluar"]:%d %b %Y}' for t in tr],
-                "Hari": [t["hari"] for t in tr],
-                "Harga masuk": [format_angka(t["harga_masuk"]) for t in tr],
-                "Harga keluar": [format_angka(t["harga_keluar"]) for t in tr],
-                "Hasil": [f'{t["hasil"]:+.2f}%' for t in tr],
+                "Masuk": [f'{x["masuk"]:%d %b %Y}' for x in tr],
+                "Keluar": [f'{x["keluar"]:%d %b %Y}' for x in tr],
+                "Hari": [x["hari"] for x in tr],
+                "Harga masuk": [format_angka(x["harga_masuk"]) for x in tr],
+                "Harga keluar": [format_angka(x["harga_keluar"]) for x in tr],
+                "Hasil": [f'{x["hasil"]:+.2f}%' for x in tr],
             }), use_container_width=True, hide_index=True, height=340)
 
     if lebih_baik:
@@ -4365,9 +4494,9 @@ def halaman_backtest():
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_berita():
-    st.subheader("Berita & Data Makro")
+    st.subheader(t("j_berita"))
 
-    tab_berita, tab_makro = st.tabs(["Kabel Berita", "Indikator Ekonomi"])
+    tab_berita, tab_makro = st.tabs([t("t_kabel_berita"), t("t_indikator_ek")])
 
     with tab_berita:
         a, b = st.columns([3, 1])
@@ -4375,7 +4504,7 @@ def halaman_berita():
             lingkup = st.radio("Lingkup", ["Indonesia", "Global", "Semua"],
                                horizontal=True, label_visibility="collapsed")
         with b:
-            if st.button("⟳  SEGARKAN", use_container_width=True):
+            if st.button(t("b_segarkan"), use_container_width=True):
                 st.cache_data.clear()
                 st.rerun()
 
@@ -4458,7 +4587,7 @@ def halaman_berita():
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_portofolio():
-    st.subheader("Portofolio")
+    st.subheader(t("j_portofolio"))
 
     posisi = st.session_state.portofolio
 
@@ -4717,7 +4846,7 @@ def buat_pdf(judul: str, subjudul: str, bagian: list, penyusun: str) -> bytes:
 
 
 def halaman_laporan():
-    st.subheader("Laporan PDF")
+    st.subheader(t("j_laporan"))
     st.markdown(
         '<div class="catatan">Cetak isi terminal jadi dokumen rapi — berguna untuk arsip '
         'pribadi, laporan berkala, atau kalau Anda memakai aplikasi ini melayani orang '
@@ -4888,8 +5017,8 @@ def halaman_laporan():
 # ──────────────────────────────────────────────────────────────────────
 
 def halaman_tentang():
-    st.subheader("Tentang")
-    tab_aplikasi, tab_pembuat, tab_versi = st.tabs(["Aplikasi", "Pembuat", "Pembaruan"])
+    st.subheader(t("j_tentang"))
+    tab_aplikasi, tab_pembuat, tab_versi = st.tabs([t("t_aplikasi"), t("t_pembuat"), t("t_pembaruan")])
 
     with tab_pembuat:
         bagian_pembuat()
@@ -5191,7 +5320,7 @@ def main():
             '<div style="color:var(--aksen);font-weight:700;letter-spacing:0.16em;font-size:1.02rem;">'
             'TERMINAL RINGAN</div>'
             f'<div style="color:var(--teks4);font-size:0.7rem;letter-spacing:0.08em;">'
-            f'DATA TERBUKA · v{VERSI}</div></div>',
+            f'{t("sub_merek")} · v{VERSI}</div></div>',
             unsafe_allow_html=True,
         )
 
@@ -5203,16 +5332,25 @@ def main():
             st.markdown(
                 f'<div class="kartu" style="border-left:2px solid var(--aksen);'
                 f'padding:0.5rem 0.6rem;margin-bottom:0.5rem;">'
-                f'<div class="label">VERSI BARU TERSEDIA</div>'
+                f'<div class="label">{t("sb_versi_baru")}</div>'
                 f'<div style="color:var(--aksen);font-weight:700;font-size:0.9rem;">'
                 f'{info_versi.get("versi")}</div>'
                 f'<div style="color:var(--teks4);font-size:0.66rem;">'
-                f'buka Tentang → Pembaruan</div></div>',
+                f'{t("sb_buka_tentang")}</div></div>',
                 unsafe_allow_html=True,
             )
 
+        pilih_bahasa = st.selectbox(
+            t("bahasa"), list(BAHASA),
+            index=list(BAHASA).index(st.session_state.get("bahasa", "id")),
+            format_func=lambda k: BAHASA[k]["_nama"], key="pilih_bahasa")
+        if pilih_bahasa != st.session_state.get("bahasa", "id"):
+            st.session_state.bahasa = pilih_bahasa
+            simpan_pengaturan()
+            st.rerun()
+
         gelap = st.session_state.tema == "gelap"
-        if st.button("☀  MODE TERANG" if gelap else "☾  MODE GELAP",
+        if st.button(t("mode_terang") if gelap else t("mode_gelap"),
                      use_container_width=True, key="tukar_tema"):
             st.session_state.tema = "terang" if gelap else "gelap"
             simpan_pengaturan()
@@ -5222,15 +5360,16 @@ def main():
             ["Pasar", "Grafik", "Screener", "Fundamental", "Backtest",
              "Kalkulator", "Berita & Makro", "Portofolio", "Dompet Kripto",
              "Peringatan", "Jurnal", "Laporan", "Tentang"],
+            format_func=lambda x: t(KUNCI_MENU[x]),
             label_visibility="collapsed",
         )
         st.divider()
         st.markdown(
             '<div class="catatan">'
-            f'{len(st.session_state.watchlist)} simbol dipantau<br>'
-            f'{len(st.session_state.portofolio)} posisi tercatat<br><br>'
-            'Data tersimpan lokal di folder <code>data/</code>.<br><br>'
-            f'Dibuat oleh<br><b style="color:var(--teks6);">{PROFIL["nama"]}</b><br>'
+            f'{len(st.session_state.watchlist)} {t("sb_simbol")}<br>'
+            f'{len(st.session_state.portofolio)} {t("sb_posisi")}<br><br>'
+            f'{t("sb_lokal")}<br><br>'
+            f'{t("sb_dibuat")}<br><b style="color:var(--teks6);">{PROFIL["nama"]}</b><br>'
             f'<a href="{PROFIL["profil_web"]}" target="_blank" '
             f'style="color:var(--aksen);text-decoration:none;">idcrypt.xyz ↗</a>'
             '</div>',
