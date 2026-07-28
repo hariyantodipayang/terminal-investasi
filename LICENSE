@@ -1,21 +1,96 @@
-MIT License
+TERMINAL INVESTASI — PROPRIETARY LICENSE
 
-Copyright (c) 2026 hariyanto
+Copyright (c) 2026 Hariyanto, S.Sos. All rights reserved.
+Kepahiang, Bengkulu, Indonesia.
+Contact: https://dipayang.idcrypt.xyz/profil
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. GRANT
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+You are granted permission to view this source code, to run it on computers
+you own or control, and to evaluate it for your own personal, non-commercial
+use.
+
+You may keep a personal copy for that purpose, and you may modify that copy
+for your own private use.
+
+
+2. RESTRICTIONS
+
+Without prior written permission from the copyright holder, you may NOT:
+
+   a. Redistribute this software or any part of it, whether modified or
+      unmodified, whether free of charge or for payment;
+
+   b. Sell, rent, lease, sublicense, or otherwise commercialise this software
+      or any derivative of it;
+
+   c. Use this software, or any part of it, in a commercial product or
+      service, including any product or service offered to third parties over
+      a network;
+
+   d. Publish modified versions of this software publicly, including on code
+      hosting platforms;
+
+   e. Remove or alter this licence, the copyright notice, or the author
+      attribution contained in the software.
+
+
+3. PERMISSION AND LICENSING
+
+Commercial licences, redistribution rights, and custom arrangements are
+available. Enquiries are welcome and will be answered.
+
+   https://dipayang.idcrypt.xyz/profil
+
+
+4. CONTRIBUTIONS
+
+Bug reports and suggestions are welcome through the repository's issue
+tracker. By submitting a code contribution, you agree that the copyright
+holder may use it under the terms of this licence and any future licence
+the copyright holder chooses.
+
+
+5. THIRD-PARTY COMPONENTS
+
+This software depends on third-party open-source libraries, each governed by
+its own licence. Those licences apply to those libraries, not to this
+software. The libraries are not redistributed here; they are installed
+separately by the user.
+
+This software retrieves data from third-party public sources including Yahoo
+Finance, CoinGecko, alternative.me, the World Bank API, Blockstream,
+Ethplorer, and the Solana public RPC. Use of those sources is subject to
+their respective terms. The copyright holder makes no claim over that data
+and provides no warranty regarding its accuracy or availability.
+
+
+6. NO WARRANTY
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+
+7. NOT FINANCIAL ADVICE — LIMITATION OF LIABILITY
+
+This software is an informational tool. It does not provide investment,
+financial, legal, tax, or Shariah-compliance advice, and it deliberately
+contains no buy or sell recommendations.
+
+Market data may be delayed, incomplete, or wrong. Calculations, backtests,
+screening results, and technical readings are indicative only and must not be
+relied upon as the sole basis for any financial decision.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY — INCLUDING BUT NOT LIMITED TO TRADING OR INVESTMENT LOSSES —
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM OR IN
+CONNECTION WITH THIS SOFTWARE OR ITS USE.
+
+You are solely responsible for your own financial decisions.
+
+
+8. GOVERNING LAW
+
+This licence is governed by the laws of the Republic of Indonesia.

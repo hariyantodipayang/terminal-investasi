@@ -8,7 +8,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-e08b2a)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-Windows%20·%20macOS%20·%20Linux-lightgrey)
-![License](https://img.shields.io/badge/license-All%20rights%20reserved-red)
+![License](https://img.shields.io/badge/license-Proprietary-red)
 
 Stocks · Crypto · Forex — across 12 markets
 Screener · Backtesting · Technical analysis · Portfolio · Trade journal
@@ -375,6 +375,10 @@ If this tool is useful to you, support is welcome via DANA — the QR code is in
 
 ## License
 
-Copyright © 2026 Hariyanto. All rights reserved.
+**Proprietary — copyright © 2026 Hariyanto, S.Sos. All rights reserved.**
 
-You may read and evaluate this code. Redistribution, modification, and commercial use require written permission. Get in touch if you'd like to discuss licensing.
+You may view this source code, run it on your own computer, and modify your private copy for personal, non-commercial use.
+
+Redistribution, publishing modified versions, and any commercial use require prior written permission. Commercial licences are available — see [LICENSE](LICENSE) for the full terms, and get in touch if you'd like to discuss them.
+
+This is an informational tool, not financial advice. Market data may be delayed or wrong, and you are solely responsible for your own financial decisions.
