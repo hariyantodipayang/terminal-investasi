@@ -1,0 +1,25 @@
+# Data pribadi pemakai — jangan pernah diunggah
+data/
+
+# Lingkungan Python dan berkas sementara
+.venv/
+__pycache__/
+*.pyc
+*.baru
+
+# Salinan versi lama yang dibuat saat memperbarui
+cadangan/
+
+# Berkas sistem
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ── CATATAN PENTING ───────────────────────────────────────────────────
+# Folder rilis/ HARUS ikut diunggah ke GitHub. Berkas rilis/versi.json
+# itulah yang dibaca aplikasi pemakai untuk memeriksa pembaruan — kalau
+# tidak ada di sana, sistem pembaruan tidak akan pernah bekerja.
+#
+# buat_rilis.py, CARA-RILIS.md, dan CARA-BAGIKAN.md boleh ada di
+# repositori (isinya bukan rahasia), tetapi jangan disertakan dalam ZIP
+# yang dibagikan ke pemakai — itu alat kerja Anda, bukan bagian aplikasi.
