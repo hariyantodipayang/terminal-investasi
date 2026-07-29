@@ -5,13 +5,13 @@
 **A lightweight financial terminal that runs on your own computer.**
 **No subscription. No credits. No API keys.**
 
-![Version](https://img.shields.io/badge/version-1.1.0-e08b2a)
+![Version](https://img.shields.io/badge/version-2.0.0-e08b2a)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-Windows%20·%20macOS%20·%20Linux-lightgrey)
-![Language](https://img.shields.io/badge/UI-Indonesian%20·%20English-e08b2a)
+![Language](https://img.shields.io/badge/UI-6%20languages-e08b2a)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 
-Stocks · Crypto · Forex — across 12 markets
+Stocks · Crypto · Forex · Gold — across 12 markets
 Screener · Backtesting · Technical analysis · Portfolio · Trade journal
 
 </div>
@@ -43,7 +43,7 @@ This project rebuilds that convenience layer, locally, for nothing.
 
 Everything runs in Python on your own machine. Your portfolio, your journal, your wallet addresses — none of it leaves your computer.
 
-**Available in Indonesian and English** — switch language from the sidebar at any time.
+**Available in six languages** — English, Bahasa Indonesia, Bahasa Melayu, 简体中文, Español, and Português (Brasil). Switch from the sidebar at any time.
 
 ---
 
@@ -123,7 +123,7 @@ Try the light/dark toggle at the top. Look at the 13 modules. Don't click into t
 Go to **Pasar** (Market), open the watchlist panel, and replace the defaults with 5–10 things you actually follow. Other modules read from this list, so it is the foundation.
 
 **Minutes 10–15 — Market Pulse.**
-Still on **Pasar**, work through the five tabs: world indices, crypto, forex, commodities, Indonesian equities. Just look. Let your eyes learn the layout.
+Still on **Pasar**, start with the **Ikhtisar** tab — it reads the whole market for you in a paragraph — then work through the rest: world indices, crypto, forex, gold, commodities, Indonesian equities.
 
 **Minutes 15–25 — Charts & Analysis.**
 Pick one symbol you know well. Look at the chart, then switch to the **Pembacaan Teknikal** (Technical Read) tab and compare what the app says against what you already believe. This is the fastest way to judge whether the data is trustworthy — and to notice which data sources aren't connected yet.
@@ -139,11 +139,13 @@ Open **Kalkulator → Ukuran Posisi** (Position Size). Enter your real capital a
 
 ### Pasar — Market Pulse
 
-Five tabs, each card carrying a 30-day trend sparkline coloured by direction.
+Seven tabs. Every card carries a 30-day trend sparkline and a line showing the one-week, one-month, and one-year move, so a single red day is never the whole story.
 
+- **Ikhtisar** — the whole market on one screen: a written summary of the day, a cross-asset table with one-day, one-week, one-month, year-to-date and one-year columns, and a bar for each instrument showing where it sits within its 52-week range
 - **Indeks Dunia** — six world indices including IHSG
 - **Kripto** — global market cap, 24h volume, Bitcoin dominance, Fear & Greed index, and the top 12 coins
 - **Forex** — 22 pairs in three groups: majors, IDR crosses, and cross rates
+- **Emas** — the world price per gram in local currency, a table of common weights, a dealer-premium checker, and a chart separating the metal's move from the currency's
 - **Komoditas & Kurs** — USD/IDR, gold, silver, WTI crude, dollar index, US 10-year
 - **Saham Indonesia** — nine large-cap IDX names
 
@@ -185,10 +187,12 @@ Results open with a verdict panel showing how much more or less you'd have than 
 - **Forex position** — pip value converted to your local currency, lot sizing, risk/reward
 - **Averaging** — what adding to a position does to your average price
 - **Break-even** — the minimum sell price to actually profit after all fees
+- **Gold zakat** — the 85-gram threshold, the one-year holding period, and the 2.5% rate, with the silver threshold shown for comparison
+- **Gold saving** — a fixed monthly purchase simulated against real historical prices, dealer premium and buyback discount included, benchmarked against a deposit
 
 ### Berita & Makro — News & Macro
 
-RSS from CNBC Indonesia, Kontan, Bisnis.com, plus global sources. A second tab carries World Bank long-run indicators — GDP growth, inflation, unemployment, exports, current account — for eight countries.
+RSS from CNBC Indonesia, Kontan, Bisnis.com, plus global sources. A second tab carries World Bank long-run indicators — GDP growth, inflation, unemployment, exports, current account — for eight countries. A third puts gold, the exchange rate, and the stock index on the same rebased scale, so the claim that gold holds its value can be checked rather than assumed.
 
 ### Portofolio — Portfolio
 
@@ -337,18 +341,70 @@ Please read this before relying on anything here.
 - **Backtests exclude dividends and delisted companies**, both of which flatter historical results.
 - **Forex backtests ignore overnight swap and leverage.** On positions held for months, swap can exceed the entire price gain. Margin-call risk is not modelled at all.
 - **The Shariah screen is a first-pass filter, not a ruling.** It evaluates business activity and interest-bearing debt ratios, but cannot compute non-halal income or receivables — neither is available in free data. Indonesian investors should defer to the OJK's *Daftar Efek Syariah* (DES), or the ISSI and JII indices. A stock may pass here and be absent from DES, or the reverse.
+- **The gold price shown is the world price, not your dealer's.** Retail gold carries a fabrication and distribution premium on the way in and a discount on the way out. The app cannot fetch Antam or Pegadaian quotes — no free source publishes them — so it gives you a premium checker instead and asks you to type in what you actually see.
+- **The zakat calculator is arithmetic, not a ruling.** It applies the most widely used figures. Whether worn jewellery counts, which threshold applies to cash, and how debts are treated are questions with more than one long-standing scholarly answer, and the app presents them as such rather than deciding for you.
 - **Nothing here is investment advice.** There are deliberately no buy or sell signals. Automated signals encourage people to stop thinking, and that is usually where money goes.
 
 ---
 
 ## Version history
 
+### 2.0.0 — July 2026
+
+Everything below happened between 1.1.0 and 2.0.0. The intermediate numbers were
+development iterations that were never published on their own, so they are collected here.
+
+**Six languages.** English, Bahasa Indonesia, Bahasa Melayu, 简体中文, Español, and
+Português (Brasil). Every string a user can see is translated — 694 interface strings and
+25 long-form passages, 4,314 translations in all. Switch from the sidebar at any time; your
+choice is remembered.
+
+**Renamed to Terminal Investasi**, consistently, in every language and in the exported PDFs.
+
+**Market Overview**, a new first tab. A written summary of the trading day — how many
+instruments rose and fell, which led and which trailed, and whether the moves were broad or
+scattered. A cross-asset table putting IHSG, the S&P 500, NASDAQ, Bitcoin, Ethereum, gold,
+WTI crude, the dollar index, and USD/IDR side by side over one day, one week, one month,
+year-to-date, and one year. A 52-week position bar for each. Every other market card gained
+the same longer view beneath its daily change.
+
+**Gold, in four places.** The world price per gram in local currency with a dealer-premium
+checker; a zakat calculator built on the 85-gram threshold, the lunar-year holding period,
+and the 2.5% rate; a monthly gold-saving simulation run against real historical prices with
+premium and buyback discount applied; and a store-of-value comparison against the exchange
+rate, the stock index, and inflation.
+
+**Forex throughout.** 22 pairs on the Market page, forex-aware backtesting priced in pips
+rather than percentage commission, and a position-size calculator that converts pip value
+into your own currency.
+
+**Finer backtest timeframes** — eight in total, from monthly down to one-minute — with a
+richer result panel: underwater drawdown chart, shaded holding periods, monthly returns
+heatmap, trade-result distribution, and a full trade list.
+
+**Screener across 12 markets** with one-click presets, a 0–100 composite score broken into
+its four components, and Shariah screening on two thresholds.
+
+**Crypto Market Pulse** with global market cap, Bitcoin dominance, and the Fear & Greed
+index, plus a crypto screener covering up to 250 coins.
+
+**Light and dark themes**, driven by a single 29-colour palette.
+
+**Signed opt-in updater.** SHA-256 verification, an all-or-nothing write, automatic backup,
+and a rollback button. Only three files can ever be replaced; your `data/` folder is never
+touched. The automatic check can be switched off.
+
+**Author profile** with project portfolio, services, applications and source code, books and
+digital products, and support options.
+
+**macOS and Linux launcher** (`MULAI.sh`) alongside the Windows one.
+
 ### 1.1.0 — July 2026
 
-- **English interface** — switch language from the sidebar; the choice is remembered
-- **macOS and Linux launcher** (`MULAI.sh`) with automatic environment setup
-- Packaged releases with a clean download ZIP
-- Fixed: a local variable shadowed the translation function, breaking the Backtest page
+- English interface, switchable from the sidebar
+- macOS and Linux launcher (`MULAI.sh`)
+- Packaged download containing only application files
+- Fixed a crash on the Backtest page introduced by the translation system
 
 ### 1.0.0 — July 2026
 
